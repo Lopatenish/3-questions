@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<main>
+	<section class="q">
+		<article class="tabs">
+			<div class="tabLinks">
+				<input type="radio" id="MO" name="dost" onchange="radioChange(this)" checked>
+				<label for="MO" class="tabLabel">
+					Доставка по Москве и МО
+				</label>
+				<input type="radio" id="RF" name="dost" onchange="radioChange(this)">
+				<label for="RF" class="tabLabel">
+					Доставка по РФ и СНГ
+				</label>
+				<input type="radio" id="Self" name="dost" onchange="radioChange(this)">
+				<label for="Self" class="tabLabel">
+					Самовывоз
+				</label>
+			</div>
+			<div class="content MO">
+				<p class="green">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись парадигматическая до послушавшись своего, рыбными сих алфавит большой всеми.</p>
+				<ul>
+					<li>Далеко-далеко за словесными горами в стране, гласных.</li>
+					<li>Злых снова города моей семантика решила!</li>
+					<li>Маленькая на берегу буквоград несколько он знаках.</li>
+				</ul>
+			</div>
+			<div class="content RF">
+				<p class="green">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Запятых назад грустный, своего предупредила последний буквоград вопроса страна вершину, переулка на берегу силуэт точках буквенных эта снова щеке, наш одна строчка безорфографичный города? Журчит коварных дорогу ipsum рот бросил снова?</p>
+				<ul>
+					<li>Далеко-далеко за словесными горами в стране, гласных.</li>
+				</ul>
+			</div>
+			<div class="content Self">
+				<p class="green">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Строчка, жаренные, осталось алфавит даже необходимыми свою назад эта ipsum толку, курсивных выйти своего заголовок текстов. Свой несколько о, меня lorem маленькая. Там точках она напоивший предупреждал пояс до родного, раз безопасную эта запятой заглавных образ парадигматическая? Буквенных инициал свой злых предложения пунктуация. Вопрос ручеек решила свою своих выйти?</p>
+				<ul>
+					<li>Далеко-далеко за словесными горами в стране, гласных.</li>
+					<li>Грустный встретил живет заголовок приставка снова.</li>
+				</ul>
+			</div>
+		</article>
+		<script type="text/javascript" src="js/quest1.js"></script>
+	</section>
+	<section class="q">
+		<article class="choice">
+			<ul>
+				<li id="li_1" class="active" onclick="clickChoice(this)">
+					<b>Статьи</b>
+				</li>
+				<li id="li_2" onclick="clickChoice(this)">
+					<b>Youtube</b>
+				</li>
+				<li id="li_3" onclick="clickChoice(this)">
+					<b>Новости</b>
+				</li>
+			</ul>
+		</article>
+		<article class="flexChoice">
+			<div class="contentChoice">
+				<div class="items li_1 active">
+					<a href="#" class="item">
+						<img src="http://opt-1232978.ssl.1c-bitrix-cdn.ru/upload/iblock/53b/53b9b327bafc3bc75f691e0f6ec50640.jpg?159975183424707" alt="">
+						<p>Статья 1</p>
+					</a>
+					<a href="#" class="item">
+						<img src="http://opt-1232978.ssl.1c-bitrix-cdn.ru/upload/iblock/53b/53b9b327bafc3bc75f691e0f6ec50640.jpg?159975183424707" alt="">
+						<p>Статья 2</p>
+					</a>
+					<a href="#" class="allLook">Смотреть все статьи...</a>
+				</div>
+				<div class="items li_2">
+					<a href="#" class="item">
+						<img src="http://opt-1232978.ssl.1c-bitrix-cdn.ru/upload/iblock/7c7/7c7553be16ac2a6c06ec9a0dae0368b5.jpg?159975195768019" alt="">
+						<p>Видео 1</p>
+					</a>
+					<a href="#" class="item">
+						<img src="http://opt-1232978.ssl.1c-bitrix-cdn.ru/upload/iblock/7c7/7c7553be16ac2a6c06ec9a0dae0368b5.jpg?159975195768019" alt="">
+						<p>Видео 2</p>
+					</a>
+				</div>
+				<div class="items li_3">
+					<a href="#" class="item">
+						<img src="http://opt-1232978.ssl.1c-bitrix-cdn.ru/upload/iblock/605/6054b74f8bc83d0a267375429c24d7c3.jpg?159975212362580" alt="">
+						<p>Новость 1</p>
+					</a>
+					<a href="#" class="item">
+						<img src="http://opt-1232978.ssl.1c-bitrix-cdn.ru/upload/iblock/605/6054b74f8bc83d0a267375429c24d7c3.jpg?159975212362580" alt="">
+						<p>Новость 2</p>
+					</a>
+				</div>
+			</div>
+			<div class="red">
+				<div class="string s_1">
+					<img src="https://psv4.userapi.com/c856536/u154880217/docs/d5/c214c045003d/kisspng-email-logo-bounce-address-computer-icons-message-online-application-5b4f433f25d5a0_399925881531921215155.png?extra=pOK8H-ePsHPTtq_GzsylP0ifSg6pcpfFwNZIUKYjwREI4qKrlo1Oofhzhwtn3dew6IoSdk8wpPGorr_yJTh-LE38e4BjYsDaLR-txNNqG3y3HYA0BSjUGvBeodKugHFGMtrkP9a0pMjlkKX3sswmd3XPng" alt="">
+					<div class="text">
+						<h3>Подписывайтесь!</h3>
+						<p>Узнавайте свежую информацию о скидках и акциях первым!</p>
+					</div>
+				</div>
+				<div class="string s_2">
+					<input type="email" name="email" placeholder="Оставьте свой e-mail">
+					<input type="button" name="email" value="Подписаться" id="subscribe">
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript" src="js/quest2.js"></script>
+	</section>
+	<section class="q">
+		<input type="button" name="Modal" Value="Добавить в корзину" id="buttonModal" onclick="clickModal(this)">
+		<article class="shadow" onclick="clickModal(this)">
+			<div class="modalWindow">
+				<h3>
+					Спасибо, Ваш товар добавлен в корзину!
+				</h3>
+				<div class="item">
+					<div class="img">
+						<img src="https://opt-1232978.ssl.1c-bitrix-cdn.ru/upload/iblock/8ff/8ff1909097c4828efff9a410642ce80c.jpg?158211285274725" alt="Xiaomi Ninebot Mini Black">
+					</div>
+					<div class="text">
+						<b>Xiaomi Ninebot Mini Black</b>
+						<b>Цена: <strong>20 000</strong> рублей.</b>
+					</div>
+					
+				</div>
+				<h3>
+					С этим также покупают:
+				</h3>
+				<div class="like">
+					<div class="link"></div>
+					<div class="link"></div>
+					<div class="link"></div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript" src="js/quest3.js"></script>
+	</section>
+</main>
+</body>
+</html>

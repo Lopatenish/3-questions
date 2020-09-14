@@ -1,0 +1,209 @@
+*{
+	box-sizing: border-box;
+	color: black;
+}
+.q{
+	width: 100%;
+	border: 1px solid #48a216;
+	margin: 10px 0;
+	padding: 50px;
+}
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tabLinks {
+	margin-bottom: 10px;
+  	border-bottom: 1px solid #48a216;
+}
+.tabs input[type="radio"]{
+	display: none;
+}
+.tabs .tabLabel{
+	display: inline-block;
+	background-color: #e0e0e0;
+	padding: .5em;
+	cursor: pointer;
+	border: 1px solid #a0a0a0;
+	border-bottom: none;
+	margin-bottom: -1px;
+}
+.tabs :checked + .tabLabel{
+	position: relative;
+	background: white;
+	cursor: default;
+	border: 1px solid #48a216;
+		border-bottom: 1px solid white;
+	z-index: 10;
+}
+.green{
+	border-left: 1px solid #48a216;
+}
+p{
+	padding: 0 .2em;
+}
+li{
+	list-style-type: none;
+}
+ul{
+	padding-left: 0;
+}
+li::before{
+	content: '\25CF';
+	color: #4a9513;
+	padding-right: 10px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.choice ul{
+	display: flex;
+}
+.choice li{
+	padding-right: 1.5em;
+	color: #4a9513;
+	cursor: pointer;
+}
+.choice li b{
+	padding-bottom: .5em;
+}
+.choice li::before{
+	content: none;
+}
+.choice li:hover{
+	color: black;
+}
+.choice li.active{
+	color: black;
+	cursor: default;
+}
+.choice li.active b{
+	border-bottom: 2px solid #4a9513;
+}
+.flexChoice{
+	display: flex;
+	align-items: center;
+}
+.contentChoice{
+	width: 100%;
+}
+.contentChoice .items{
+	display: none;
+}
+.contentChoice .item{
+	display: inline-block;
+	width: 49%;
+	border: 1px solid lightgrey;
+}
+.contentChoice .item img{
+	width: 100%;
+	pointer-events: none;
+}
+.contentChoice .active{
+	display: block;
+}
+.allLook{
+	color: #4a9513;
+}
+.allLook:hover{
+	text-decoration: underline;
+}
+.red{
+	max-width: 500px;
+	padding: 2.5rem;
+	background-color: darkred;
+	color: white;
+}
+.red img{
+	width: 100px;
+	pointer-events: none;
+}
+.red input{
+	padding: .5em 1em;
+	width: 70%;
+}
+.red .string{
+	display: flex;
+	align-items: center;
+}
+.red .s_1{
+	margin-bottom: 2rem;
+}
+.red .text{
+	padding: 0 1em;
+}
+#subscribe{
+	width: 40%;
+	border: 2px solid white;
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	margin-left: 10px;
+	cursor: pointer;
+}
+#buttonModal{
+	display: block;
+	background-color: #48a216;
+	border: none;
+	color: white;
+	padding: 1em;
+	margin: 0 auto;
+	transition: filter .2s;
+}
+#buttonModal:hover{
+	cursor: pointer;
+	filter: brightness(1.1);
+}
+.shadow{
+	display: flex;
+	pointer-events: none;
+	opacity: 0;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	transition: opacity .25s;
+}
+.visible{
+	opacity: 1;
+	pointer-events: all;
+}
+.modalWindow{
+	padding: 50px;
+	background-color: white;
+	border: 2px solid #48a216;
+	text-align: center;
+}
+.modalWindow .item{
+	display: flex;
+	padding: .5em;
+	text-align: left;
+	width: 100%;
+	border: 2px solid #48a216;
+}
+.modalWindow .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.modalWindow img{
+	width: 200px;
+}
+.modalWindow .like{
+	display: flex;
+}
+.modalWindow .link{
+	width: 100%;
+	height: 100px;
+	border: 2px solid #48a216;
+}
+.modalWindow .link + .link{
+	margin-left: 20px;
+}
